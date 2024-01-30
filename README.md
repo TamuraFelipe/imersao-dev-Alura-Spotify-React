@@ -1,4 +1,4 @@
-# Spotify Clone
+# Spotify Clone (React)
 
 Este é um projeto inspirado no visual do Spotify, desenvolvido durante a Imersão Front-End da Alura.
 
@@ -22,7 +22,7 @@ O projeto consiste em um clone do Spotify, utilizando React para componentizar a
 
 ## Link do projeto
 
-[Clique aqui para visitar o projeto](https://www.google.com)
+[Clique aqui para visitar o projeto](https://imersao-dev-alura-spotify-react.netlify.app/)
 
 
 ## Como executar o projeto
