@@ -1,38 +1,162 @@
-.App {
-  text-align: center;
+/*Reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+input:focus {
+	outline: none;
+}
+a {
+	text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+:root {
+  --font-dm-sans: "DM Sans", sans-serif;
+
+  --font-sm: 10px;
+  --font-md: 12px;
+  --font-lg: 14px;
+  --font-xl: 16px;
+  --font-title: 24px;
+  
+  --black: #000;
+  --white: #fff;
+
+  --bg-dark: #121212;
+  --bg-darkgray: #242424;
+
+  --color-darkgray: #b3b3b3;
+
+  --width-sm: 560px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  background-color: var(--black);
+  font-family: var(--font-dm-sans);
+  font-size: var(--font-lg);
+}
+.main {
+    grid-column: 2;
+    padding: 8px 8px 0;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+}
+.btn {
+  padding: 8px 20px;
+  border-radius: 99999px;
+  background-color: var(--white);
+  color: var(--black);
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap;
+  width: auto; 
+}
+.btn-mobile {
+  display: none;
+  color: var(--white);
+}
+.hidden {
+  display: none!important;
+}
+@media(max-width: 560px){
+  .grid-container {
+      grid-template-columns: 62px 1fr;
   }
+  .sidebar__nav,
+    .sidebar__library {
+        overflow: hidden;
+    }
+    .sidebar__library {
+        padding-bottom: 16px;
+    }
+    .sidebar__library .library__actions {
+        padding: 8px;
+    }
+    .sidebar__library .library__actions .text,
+    .sidebar__library .library__actions .btn {
+        display: none;
+    }
+    .sidebar__nav .logo img {
+        width: 50px;
+        margin-left: -16px;
+    }
+    .sidebar__library .cookies {
+        margin: 0 0 24px;
+    }
+    .sidebar__library .languages__btn {
+        display: none;
+    }
+
+    .main .main__container .navigation {
+        flex-direction: column;
+    }
+    .main .main__container .navigation .navigation__arrows {
+        display: none;
+    }
+    
+    .main .main__content .main__content__cards .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .footer .footer__content .subtitle {
+        font-size: var(--font-md);
+    }
+
+    
+    .btn-mobile {
+        display: block;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
