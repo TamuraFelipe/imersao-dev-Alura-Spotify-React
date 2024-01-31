@@ -14,7 +14,7 @@ const Cards = ({dataSearch}) => {
     const [search, setSearch] = useState(null)
 
     useEffect( () => {
-        fetch(`http://localhost:3000/artists?name_like=${dataSearch}`)
+        fetch(`https://my-json-server.typicode.com/tamurafelipe/jsonfake/artists?name_like=${dataSearch}`)
         .then( response => response.json())
         .then( data => {
             setSearch(data);
@@ -22,7 +22,7 @@ const Cards = ({dataSearch}) => {
     }, [dataSearch])    
     
     useEffect( () => {
-        fetch('http://localhost:3000/artists')
+        fetch('https://my-json-server.typicode.com/tamurafelipe/jsonfake/artists')
         .then( response => response.json())
         .then( data => setData(data))
     }, [])
