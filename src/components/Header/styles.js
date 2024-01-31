@@ -8,7 +8,7 @@ export const MainContainer = styled.div`
 export const MainNavigation = styled.div`
     background-color: var(--bg-dark);
     border-radius: 8px;
-    padding: 20px;
+    
 `;
 export const Navigation = styled.nav`
     display: flex;
