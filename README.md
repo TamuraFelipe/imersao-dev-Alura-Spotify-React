@@ -7,7 +7,7 @@ Este é um projeto inspirado no visual do Spotify, desenvolvido durante a Imers�
 
 ## Descrição
 
-O projeto consiste em um clone do Spotify, utilizando React para componentizar a aplicação front-end. O objetivo é criar uma interface semelhante ao Spotify, onde é possível visualizar artistas e suas informações.
+O projeto consiste em um clone do Spotify, utilizando React para componentizar a aplicação front-end. O objetivo é criar uma interface semelhante ao Spotify, onde é possível visualizar artistas e suas informações. Utilizei o [My Json Server](https://my-json-server.typicode.com/), permitindo que a aplicação continue realizando as requisições após o deploy, que foi feito na [netlify](https://www.netlify.com/).
 
 ## Funcionalidades
 
@@ -37,6 +37,4 @@ O projeto consiste em um clone do Spotify, utilizando React para componentizar a
 
 Felipe Diego Tamura
 
-## Licença
 
-Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais informações.# Spotify Clone
